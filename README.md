@@ -54,11 +54,9 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |groupname|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false, foreign_key: true|
 
-### Association
-- has_many :groups_users
+### Associationuser_id|int
+- has_many :chatgroups_users
 - has_may :messages
   has_many :users, through: :chatgroups_users
 
