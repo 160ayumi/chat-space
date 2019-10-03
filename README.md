@@ -23,7 +23,9 @@ Things you may want to cover:
 
 * ...
 
-<!-- ## usersテーブル
+## usersテーブル
+
+
 
 |Column|Type|Options|
 |------|----|-------|
@@ -54,6 +56,9 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |groupname|integer|null: false, foreign_key: true|
+
+### Associationuser_id|int
+- has_many :chatgroups_users
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false, foreign_key: true|
 
@@ -71,5 +76,6 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :user
-- belongs_to :chatgroup -->
+- belongs_to :chatgroup
+- belongs_to :chatgroup
 
