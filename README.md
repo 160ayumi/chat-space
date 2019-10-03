@@ -57,7 +57,7 @@ Things you may want to cover:
 |------|----|-------|
 |groupname|integer|null: false, foreign_key: true|
 
-### Associationuser_id|int
+### Association
 - has_many :chatgroups_users
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false, foreign_key: true|
@@ -65,7 +65,7 @@ Things you may want to cover:
 ### Association
 - has_many :groups_users
 - has_may :messages
-  has_many :users, through: :chatgroups_users
+- has_many :users, through: :chatgroups_users
 
 ## chatgroups_usersテーブル
 
