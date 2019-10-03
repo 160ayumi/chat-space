@@ -23,14 +23,53 @@ Things you may want to cover:
 
 * ...
 
-## groups_usersテーブル
+<!-- ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|name|integer|null: false, foreign_key: true|
+|email|integer|null: false, foreign_key: true|
+
 
 ### Association
-- belongs_to :group
+- has_many :chatgroups_users
+- has_many :massages
+  has_many : chatgroups, through: :chatgroups_users
+
+## messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|text||
+|image|text||
+|user_id|integer|null: false, foreign_key: true|
+|chatgroup_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :chatgroup
 - belongs_to :user
+
+## chatgroupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|groupname|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
+
+### Association
+- has_many :groups_users
+- has_may :messages
+  has_many :users, through: :chatgroups_users
+
+## chatgroups_usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|chatgroup_id|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :chatgroup -->
 
