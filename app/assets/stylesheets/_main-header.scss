@@ -1,0 +1,37 @@
+.main-header__edit-botn a {
+  color: #38aef0;
+}
+.main-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #eee;
+  overflow: scroll;
+ .main-header__left-box{
+  margin-top: 35px;
+  &__current-group{
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  } 
+  &__member-list{
+  display: flex;
+  font-size: 12px;
+  color: #999999;
+  &__member{
+   box-sizing: border-box;
+  }
+ }
+}
+ .main-header__edit-botn{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  margin-top: 30px;
+  border: solid 1px #38aef0;
+  position: absolute;
+  right: 40px;
+  color: #38aef0;
+}
+}

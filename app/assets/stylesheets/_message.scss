@@ -1,0 +1,29 @@
+ .messages{
+   height: calc(100vh - 190px);
+   padding: 46px 40px;
+   background-color: #fafafa;
+   overflow: scroll;
+   box-sizing: border-box;
+   .data-message_id{
+    padding-bottom: 40px;
+     .message__upper-info{
+      display: flex;
+      margin-bottom: 10px;
+       &__talker{
+        color: #434a54;
+        font-size: 16px;
+        font-weight: bold;
+       }
+       &__date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+       }
+     }
+    .message__text{
+      color: #434a54;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+   }
+  }

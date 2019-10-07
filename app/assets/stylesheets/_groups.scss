@@ -1,0 +1,19 @@
+   .groups{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0;
+    overflow: scroll;
+    box-sizing: border-box;
+   }
+    .group{
+     margin-bottom: 40px;
+     &__group-name{
+     font-size: 15px;
+     margin-bottom: 5px;
+     }
+     &__latesr-message{
+     font-size: 11px;
+
+     }
+   }
+ 

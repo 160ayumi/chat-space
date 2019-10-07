@@ -1,0 +1,22 @@
+@import "./reset";
+@import "font-awesome";
+@import "flash-box";
+.wrapper{
+  margin: 0;
+  padding: 0;
+}
+
+.chat-side{
+  width: 300px;
+  color: white;
+  float: left;
+}
+@import "side-header";
+@import "groups";
+.chat-main{
+  width: calc(100vw - 300px);
+  float: left;
+ }
+@import "main-header";
+@import "message";
+@import "form";
