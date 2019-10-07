@@ -1,27 +1,6 @@
-.flash-box
-  .notice
-    グループを編集しました
 .wrapper
-  .chat-side
-    .side-header
-      .side-header__box
-        .side-header__box__user-name
-          ayumi
-        .side-header__box__menu
-          .side-header__box__menu__new-group
-            =link_to "/" do
-              = fa_icon 'edit'
-              
-          .side-header__box__menu__edit-user
-            =link_to "/"  do
-              = fa_icon 'cog'
-    .groups
-      .group
-        .group__group-name
-          friends
-        .group__latesr-message
-          Hello！
 
+  = render 'shared/side_bar'
 
   .chat-main 
     .main-header
@@ -33,7 +12,7 @@
           .main-header__left-box__member-list__member
             ayumi
       .main-header__edit-botn
-        =link_to "/"  do
+        =link_to "#" do
           Edit
         
 

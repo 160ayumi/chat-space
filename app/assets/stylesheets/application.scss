@@ -1,6 +1,5 @@
 @import "./reset";
 @import "font-awesome";
-@import "flash-box";
 .wrapper{
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@
   float: left;
 }
 @import "side-header";
-@import "groups";
 .chat-main{
   width: calc(100vw - 300px);
   float: left;
@@ -20,3 +18,7 @@
 @import "main-header";
 @import "message";
 @import "form";
+@import "modules/user";
+@import "config/colors";
+@import "modules/flash";
+@import "modules/group";
