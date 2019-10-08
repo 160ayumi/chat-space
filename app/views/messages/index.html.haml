@@ -6,7 +6,7 @@
     .main-header
       .main-header__left-box
         .main-header__left-box__current-group
-          friends
+          group
         .main-header__left-box__member-list
           Member：
           .main-header__left-box__member-list__member
@@ -17,14 +17,15 @@
         
 
     .messages
-      .data-message_id
-        .message__upper-info
-          .message__upper-info__talker
-            ayumi
-          .message__upper-info__date
-            2019/10/4(Fri) 13:00:00
-        .message__text
-          Hello!
+      = render @messages
+      -# .data-message_id
+      -#   .message__upper-info
+      -#     .message__upper-info__talker
+      -#       ayumi
+      -#     .message__upper-info__date
+      -#       2019/10/4(Fri) 13:00:00
+      -#   .message__text
+      -#     Hello!
 
     -# .form
     -#   .new_message
