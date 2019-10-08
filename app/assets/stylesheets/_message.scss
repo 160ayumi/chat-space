@@ -5,19 +5,34 @@
    overflow: scroll;
    box-sizing: border-box;
    .data-message_id{
+    color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     padding-bottom: 40px;
      .message__upper-info{
+      color: #000;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
       display: flex;
       margin-bottom: 10px;
        &__talker{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
         color: #434a54;
         font-size: 16px;
         font-weight: bold;
        }
        &__date{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
         color: #999999;
         font-size: 12px;
         margin-left: 10px;
+
        }
      }
     .message__text{
