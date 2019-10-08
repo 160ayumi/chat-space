@@ -12,7 +12,7 @@
           .main-header__left-box__member-list__member
             ayumi
       .main-header__edit-botn
-        =link_to "#" do
+        =link_to "" do
           Edit
         
 
@@ -26,11 +26,23 @@
         .message__text
           Hello!
 
+    -# .form
+    -#   .new_message
+    -#     .input-box
+    -#       .input-box__text
+    -#       .input-box__image
+    -#         = fa_icon 'image'
+    -#     .submit-btn
+    -#       Send
+
+
+
+
     .form
-      .new_message
-        .input-box
-          .input-box__text
-          .input-box__image
-            = fa_icon 'image'
-        .submit-btn
-          Send
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'

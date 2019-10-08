@@ -1,5 +1,6 @@
-@import "./reset";
 @import "font-awesome";
+@import "config/colors";
+@import "./reset";
 .wrapper{
   margin: 0;
   padding: 0;
@@ -19,6 +20,5 @@
 @import "message";
 @import "form";
 @import "modules/user";
-@import "config/colors";
 @import "modules/flash";
 @import "modules/group";
