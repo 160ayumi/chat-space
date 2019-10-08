@@ -6,39 +6,17 @@
     .main-header
       .main-header__left-box
         .main-header__left-box__current-group
-          group
+          = @group.name
         .main-header__left-box__member-list
           Member：
           .main-header__left-box__member-list__member
-            ayumi
+            - @group.users.each do |user|
+              = user.name
       .main-header__edit-botn
         =link_to "" do
           Edit
-        
-
     .messages
       = render @messages
-      -# .data-message_id
-      -#   .message__upper-info
-      -#     .message__upper-info__talker
-      -#       ayumi
-      -#     .message__upper-info__date
-      -#       2019/10/4(Fri) 13:00:00
-      -#   .message__text
-      -#     Hello!
-
-    -# .form
-    -#   .new_message
-    -#     .input-box
-    -#       .input-box__text
-    -#       .input-box__image
-    -#         = fa_icon 'image'
-    -#     .submit-btn
-    -#       Send
-
-
-
-
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'

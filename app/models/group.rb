@@ -4,13 +4,8 @@ class Group < ApplicationRecord
   validates :name, presence: true
   has_many :messages
 
-  def show_group_name
-    if (name__group = groups.name).present?
-      group.name? ? group.name : '画像が投稿されています'
-    else
-      'まだメッセージはありません。'
-    end
-  end
+  
+
 
 
   def show_last_message
