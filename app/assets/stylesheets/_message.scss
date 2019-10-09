@@ -4,7 +4,10 @@
    background-color: #fafafa;
    overflow: scroll;
    box-sizing: border-box;
-  .message {
+
+
+   .message {
+
     .upper-message {
       display: flex;
       &__user-name {
@@ -16,6 +19,15 @@
         color: $light_gray;
         font-size: 12px;
         padding-left: 10px;
+      }
+
+    }
+    .lower-message {
+      margin-top: 10px;
+      &__content {
+        color: $black;
+        font-size: 14px;
+        margin-bottom: 40px;
       }
     }
     .lower-message {
