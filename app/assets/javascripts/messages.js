@@ -1,7 +1,7 @@
 $(function(){
   function buildData(data){
 
-    var image = data.image ? `<img src="${data.image}">` : "";
+    var image = data.image ? `<img src="${data.image}">` : image = "";
 
     var html = `<div class="message">
     <div class="upper-message">
