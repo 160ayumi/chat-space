@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   def index
-    # @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: params[:group_users_id])
-    #   respond_to do |format|
-    #   format.html
-    #   format.json
+    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: params[:group_users_id])
+    respond_to do |format|
+      format.html
+      format.json
     end
-
+  end
 
 
   def edit
@@ -16,14 +16,6 @@ class UsersController < ApplicationController
       redirect_to root_path
     else
       render :edit
-    end
-  end
-
-  def search
-    @products = Product.where('title LIKE(?)', "%#{params[:keyword]}%").limit(20)
-    respond_to do |format|
-      format.html
-      format.json
     end
   end
   private
